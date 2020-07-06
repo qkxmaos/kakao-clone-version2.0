@@ -4,32 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dabaf47786.js" crossorigin="anonymous"></script>
     <title>Chat | Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class=chats-body>
     <div class="status-bar">
         <div class="status-bar__column">
-            <span class="status-bar__clock">
-                13:54
-            </span>
+            <span class="status-bar__clock">13:54</span>
         </div>
         <div class="status-bar__column">
             <i class="fas fa-clock"></i>
             <i class="fas fa-volume-mute"></i>
             <i class="fas fa-wifi"></i>
-            <i class="fas fa-battery-full"></i>
-            <span class="tatus-bar__battery-level">
+            <span class="status-bar__battery-level">
                 100%
             </span>
+            <i class="fas fa-battery-full"></i>
         </div>
     </div>
+
     <header class="header">
         <div class="header__header-column">
             <a href="index.html" class="header__back-btn">
-                <i class="fas fa-arrow-left fa-2x"></i>
+                <i class="fas fa-arrow-left"></i>
             </a>
             <h1 class="header__title">
                 Best Friend
@@ -39,24 +38,20 @@
             <span class="header__icon">
                 <i class="fas fa-search"></i>
             </span>
-            <div class="header__icon">
+            <span class="header__icon">
                 <i class="fas fa-bars"></i>
-            </div>
+            </span>
         </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
-            <span class="chat__timestamp">
-                2020, 5월 19일, 화요일
-            </span>
+            <span class="chat__timestamp">금요일, 5월, 29일, 2020년</span>
             <li class="incoming-message message">
-                <img src="images/avatar.jpg" calss="g-avatar message__avatar">
+                <img src="images/avatar.jpg" class="g-avatar message__avatar" alt="">
                 <div class="message__content">
-                    <span class="message__author">
-                        Best Friend
-                    </span>
-                    <div class="message_bubble">
-                        congrats I love you!
+                    <span class="message__author">Best Friend</span>
+                    <div class="meesage__bubble">
+                        I love you!
                     </div>
                 </div>
                 <span class="message__timestamp"></span>
@@ -64,13 +59,14 @@
             <li class="incoming-message message">
                 <span class="message__timestamp"></span>
                 <div class="message__content">
-                    <div class="message_bubble">
+                    <div class="meesage__bubble">
                         Thank you see you soon!
                     </div>
                 </div>
             </li>
         </ul>
     </main>
+
     <div class="chat__write">
         <div class="chat__write-column">
             <i class="far fa-plus-square"></i>
